@@ -1,0 +1,141 @@
+/* Untuk background video agar memenuhi layar */
+.background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Agar video di belakang kalkulator */
+  object-fit: cover; /* Menyesuaikan ukuran video */
+}
+
+/* Style kalkulator */
+.calculator {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Transparan agar video tetap terlihat */
+  padding: 40px;
+  border-radius: 10px;
+  width: 320px;
+  margin: 100px auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Style display */
+.display {
+  margin-bottom: 20px;
+}
+
+.display input {
+  width: 100%;
+  height: 50px;
+  text-align: right; /* Teks rata kanan */
+  font-size: 24px;
+  border: none;
+  background-color: black; /* Latar belakang hitam untuk display */
+  color: white; /* Warna teks putih */
+  padding: 0 10px; /* Padding kiri dan kanan */
+  line-height: 90px; /* Menjaga teks tetap di tengah vertikal */
+  border-radius: 90px; /* Sudut yang melengkung */
+}
+
+/* Style tombol */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.buttons button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  background-color: #f0ad4e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #ec971f;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #555;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d0d0d0;
+}
+
+button:nth-child(13), button:nth-child(14) {
+  background-color: #ff9800;
+  color: white;
+}
+
+.history {
+  margin-top: 20px;
+  background-color: rgb(236, 232, 219);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #f1eedd;
+  background-color: #e48f1a;
+  text-align: center;
+}
